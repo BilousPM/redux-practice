@@ -1,12 +1,28 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { RESET, INCREMENT, DECREMENT } from '../../redux/counter/constants.js';
+import { selectCounter, selectStep } from '../../redux/counter/selectors.js';
 
 const Counter = () => {
-  const counter = useSelector(state => state.counter.counter);
-  const step = useSelector(state => state.counter.step);
+  const counter = useSelector(selectCounter);
+  const step = useSelector(selectStep);
 
-  const handlePlusClick = () => {};
-  const handleMinusClick = () => {};
-  const handleResetClick = () => {};
+  const dispatch = useDispatch();
+
+  const handlePlusClick = () => {
+    dispatch({
+      type: INCREMENT,
+    });
+  };
+  const handleMinusClick = () => {
+    dispatch({
+      type: DECREMENT,
+    });
+  };
+  const handleResetClick = () => {
+    dispatch({
+      type: RESET,
+    });
+  };
   const handleChangeStep = () => {};
   return (
     <div>
