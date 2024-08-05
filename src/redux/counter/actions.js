@@ -1,4 +1,4 @@
-import { createAction } from '@reduxjs/toolkit';
+// import { createAction } from '@reduxjs/toolkit';
 // import { CHANGE_STEP,INCREMENT, DECREMENT, RESET } from './constants';
 
 // export const increment = () => {
@@ -24,7 +24,8 @@ import { createAction } from '@reduxjs/toolkit';
 //   };
 // };
 
-export const increment = createAction('increment');
-export const decrement = createAction('decrement');
-export const reset = createAction('reset');
-export const change_step = createAction('change_step');
+// variant 2
+// export const increment = createAction('increment');
+// export const decrement = createAction('decrement');
+// export const reset = createAction('reset');
+// export const change_step = createAction('change_step');

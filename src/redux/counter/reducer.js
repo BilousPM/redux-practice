@@ -1,26 +1,28 @@
-import { createReducer } from '@reduxjs/toolkit';
-import { change_step, decrement, increment, reset } from './actions';
+// import { createReducer } from '@reduxjs/toolkit';
+// import { change_step, decrement, increment, reset } from './actions';
 // import { DECREMENT, INCREMENT, RESET, CHANGE_STEP } from './constants';
 
-const initialState = {
-  counter: 0,
-  step: 1,
-};
-export const counterReducer = createReducer(initialState, builder => {
-  builder
-    .addCase(increment, (state, action) => {
-      state.counter += state.step;
-    })
-    .addCase(decrement, (state, action) => {
-      state.counter -= state.step;
-    })
-    .addCase(reset, (state, action) => {
-      return initialState;
-    })
-    .addCase(change_step, (state, action) => {
-      state.step = action.payload;
-    });
-});
+// const initialState = {
+//   counter: 0,
+//   step: 1,
+// };
+// export const counterReducer = createReducer(initialState, builder => {
+//   builder
+//     .addCase(increment, (state, action) => {
+//       state.counter += state.step;
+//     })
+//     .addCase(decrement, (state, action) => {
+//       state.counter -= state.step;
+//     })
+//     .addCase(reset, (state, action) => {
+//       return initialState;
+//     })
+//     .addCase(change_step, (state, action) => {
+//       state.step = action.payload;
+//     });
+// });
+
+// Native Redux --> Reducer
 
 // export const counterReducer = (state = initialState, actions) => {
 //   switch (actions.type) {
